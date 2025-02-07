@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "600614a"
-hash = "e9cf1bfc03de7fee0f1d4260da0d1dfd"
+rev = "0725851"
+hash = "771f18427fb75fb19990ce602bb322f4"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "9c37d37"
-hash = "63522f9e5675f0f14835297af16b9462"
+rev = "af8bf6f"
+hash = "3e56b7665569519e3fc54b02868627c4"
 
 [[plugin.deps]]
 use = "KKV9/compress"
@@ -20,13 +20,13 @@ hash = "2824dd15741717ccee82e232ccf894d7"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "600614a"
-hash = "882ed23839778f82dc137248979c8681"
+rev = "0725851"
+hash = "ae9e1d0c6bfd68cdebc98cc684c22b45"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:max-preview"
-rev = "600614a"
-hash = "9bc26d10d2f6e2aa93b10905b1b76979"
+rev = "0725851"
+hash = "15b2ff7f6563c14d5b2e93b3e9da35de"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
@@ -35,25 +35,18 @@ hash = "72355a6c8b7c8de6ed4dda0f98f86fee"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "600614a"
-hash = "4c7e8fd0266eedee7b619d966bd2d025"
+rev = "0725851"
+hash = "f28138c2e11e87962b66d583fef724c3"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "600614a"
-hash = "72c66a0b3d60f8377eb9db5e1d8b60b2"
-
-[[plugin.deps]]
-use = "yazi-rs/plugins:diff"
-rev = "600614a"
-hash = "284f6694e3b1a4afd686acf1052acd90"
+rev = "0725851"
+hash = "af11685de39c366ec1137fcbccacdbff"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "600614a"
-hash = "ea24edab4a62c94dbd205adfb6f2c08d"
+rev = "0725851"
+hash = "b482f4f2d3c4e0aa3f8db89a95699439"
 
-[[flavor.deps]]
-use = "Chromium-3-Oxide/everforest-medium"
-rev = "65bc09b"
-hash = "2bc39a2ccc968ba4d50ea060e0722967"
+[flavor]
+deps = []
