@@ -16,8 +16,6 @@
 
 [yaziline.yazi](https://github.com/llanosrocas/yaziline.yazi)：Yazi的简单类似lualine的状态行，在状态行中显示更多信息
 
-[yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：这个插件允许你在Neovim的浮动窗口中打开Yazi。（使用[lazy.nvim](https://lazy.folke.io/)安装，配合[Neovim](https://neovim.io/)使用）
-
 [full-border.yazi](https://github.com/yazi-rs/plugins/tree/main/full-border.yazi)：给Yazi加上完整的边框，让它看起来更华丽
 
 [max-preview.yazi](https://github.com/yazi-rs/plugins/tree/main/max-preview.yazi)：最大化或恢复预览窗格
@@ -30,6 +28,6 @@
 
 [smart-filter.yazi](https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi)：一个让过滤器变得更智能的Yazi插件：连续过滤，自动进入唯一目录，提交时打开文件。
 
-[yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合Neovim使用，使用lazy.nvim插件管理器安装，具体参照我的nvim配置。
+[yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合[Neovim](https://neovim.io/)使用，使用[lazy.nvim](https://lazy.folke.io/)安装，具体参照我的nvim配置[HC3560/HC-Config](https://github.com/HC3560/HC-Config)。
 
 
