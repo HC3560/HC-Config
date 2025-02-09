@@ -5,8 +5,8 @@ hash = "771f18427fb75fb19990ce602bb322f4"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "af8bf6f"
-hash = "3e56b7665569519e3fc54b02868627c4"
+rev = "d1cd0a3"
+hash = "d1fee6d0f74cb52d4e031dc6b9207f31"
 
 [[plugin.deps]]
 use = "KKV9/compress"

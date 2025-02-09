@@ -1,8 +1,8 @@
 require("git"):setup()
 
---require("starship"):setup({
---	config_file = "~/.config/yazi/starship.toml",
---})
+require("starship"):setup({
+	config_file = "~/.config/yazi/starship.toml",
+})
 
 require("yaziline"):setup({
 	color = "#6CA37A", -- main theme color
