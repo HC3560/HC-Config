@@ -1,8 +1,20 @@
 # Yazi
 
+使用配置文件需先参考官方文档（[Yazi](https://yazi-rs.github.io/)）安装Yazi需要的一些扩展软件：
+
+```shell
+apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+```
+
+Yazi本体可以通过Cargo安装：
+
+```shell
+cargo install --locked yazi-fm yazi-cli
+```
+
 参考：
 
-[【命令行必备】Yazi：最强文件管理器_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1yRkCYVEUT/)
+[【命令行必备】Yazi：最强文件管理器\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1yRkCYVEUT/)
 
 [Bilibili-Yazi](https://instaboard.app/b/UYDDqLRsB)
 
@@ -29,5 +41,3 @@
 [smart-filter.yazi](https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi)：一个让过滤器变得更智能的Yazi插件：连续过滤，自动进入唯一目录，提交时打开文件。
 
 [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合[Neovim](https://neovim.io/)使用，使用[lazy.nvim](https://lazy.folke.io/)安装，具体参照我的nvim配置[HC3560/HC-Config](https://github.com/HC3560/HC-Config)。
-
-
