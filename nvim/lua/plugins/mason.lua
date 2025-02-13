@@ -21,7 +21,7 @@ return {
         require('mason-lspconfig').setup {}
         require('mason-tool-installer').setup {
             ensure_installed = {
-                --                'ts_ls',
+                'ts_ls',
                 'lua-language-server',
                 'stylua',
                 'eslint_d',
