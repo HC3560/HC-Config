@@ -1,11 +1,14 @@
+-- HC-Plugin: git.yazi
 require("git"):setup()
 
+-- HC-Plugin: starship.yazi
 require("starship"):setup({
 	config_file = "~/.config/yazi/starship.toml",
 })
 
+-- HC-Plugin: yaziline.yazi
 require("yaziline"):setup({
-	color = "#6CA37A", -- main theme color
+	color = "#A7C080", -- main theme color
 	separator_style = "angly", -- "angly" | "curvy" | "liney" | "empty"
 	separator_open = "",
 	separator_close = "",
@@ -20,6 +23,7 @@ require("yaziline"):setup({
 	filename_truncate_separator = "...", -- the separator of the truncated filename
 })
 
+-- HC-Plugin: full-border.yazi
 require("full-border"):setup()
 
 -- 在状态栏中显示符号链接
