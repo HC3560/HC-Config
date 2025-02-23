@@ -32,3 +32,5 @@ run = "plugin confirm-quit"
 ```
 
 Credits to [@lpnh for sharing it](https://github.com/sxyazi/yazi/issues/2267#issuecomment-2624805134).
+
+Note: When using this plugin, you may notice a brief popup flashing before Yazi quits. This is a "running task" confirmation popup. For more details about this behavior, see: [#1059](https://github.com/sxyazi/yazi/issues/1059)

@@ -42,4 +42,4 @@ cargo install --locked yazi-fm yazi-cli
 
 [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合[Neovim](https://neovim.io/)使用，使用[lazy.nvim](https://lazy.folke.io/)安装，具体参照我的nvim配置[HC3560/HC-Config](https://github.com/HC3560/HC-Config)。
 
-[confirm-quit.yazi](https://yazi-rs.github.io/docs/tips#confirm-quit)：如果有多个标签页打开，在退出前进行一次确认。
+[confirm-quit.yazi](https://yazi-rs.github.io/docs/tips#confirm-quit)：如果有多个标签页打开，在退出前进行一次确认。注意：使用此插件时，您可能会在 Yazi 退出前注意到一个短暂的弹出窗口闪烁。这是一个“运行任务”确认弹出窗口。有关此行为的更多详细信息，请参阅： [#1059](https://github.com/sxyazi/yazi/issues/1059)

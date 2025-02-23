@@ -8,9 +8,9 @@ local function entry()
 	end
 
 	local yes = ya.confirm({
-		pos = { "center", w = 75, h = 15 },
+		pos = { "center", w = 65, h = 10 },
 		title = "Quit?",
-		content = "There are multiple tabs open. Are you sure you want to quit?",
+		content = "\nMultiple tabs open.\n\nAre you sure you want to quit?",
 	})
 	if yes then
 		ya.manager_emit("quit", {})
