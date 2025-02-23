@@ -7,13 +7,22 @@
 keymap = [
 	# HC
 	{ on = [ "g", "b" ], run = "cd ~/HC-Blog", desc = "Goto ~/HC-Blog" },
+	{ on = [ "g", "p" ], run = "cd ~/Practice", desc = "Goto ~/Practice" },
+    # Lazygit
 	{ on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
+    # HC-Plugin: compress.yazi
 	{ on = [ "c", "a" ], run = "plugin compress", desc = "Archive selected files" },
+    # HC-Plugin: max-preview.yazi
 	{ on = [ "T" ], run = "plugin max-preview", desc = "Maximize or restore preview" },
+    # HC-Plugin: eza-preview.yazi
 	{ on = [ "E" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
+    # HC-Plugin: chmod.yazi
 	{ on = [ "c", "m" ], run = "plugin chmod",  desc = "Chmod on selected files" },
+    # HC-Plugin: jump-to-char.yazi
 	{ on = [ "f" ], run = "plugin jump-to-char",  desc = "Jump to char" },
+    # HC-Plugin: smart-filter.yazi
 	{ on = "F", run = "plugin smart-filter", desc = "Smart filter" },
+    # HC-Plugin: confirm-quit.yazi
 	{ on = "q", run = "plugin confirm-quit", desc = "Confirm before quitting if multiple tabs are open" },
 	{ on = "<C-w>", run = "close", desc = "Close the current tab, or quit if it's last" },
 	# HC

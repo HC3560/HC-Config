@@ -26,7 +26,7 @@ require("yaziline"):setup({
 -- HC-Plugin: full-border.yazi
 require("full-border"):setup()
 
--- 在状态栏中显示符号链接
+-- 在状态栏中显示符号链接：https://yazi-rs.github.io/docs/tips/#symlink-in-status
 Status:children_add(function(self)
 	local h = self._current.hovered
 	if h and h.link_to then
@@ -36,7 +36,7 @@ Status:children_add(function(self)
 	end
 end, 3300, Status.LEFT)
 
--- 在状态栏中显示用户/文件组
+-- 在状态栏中显示用户/文件组：https://yazi-rs.github.io/docs/tips/#user-group-in-status
 Status:children_add(function()
 	local h = cx.active.current.hovered
 	if h == nil or ya.target_family() ~= "unix" then

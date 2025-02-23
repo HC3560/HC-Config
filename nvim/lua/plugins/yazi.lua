@@ -2,6 +2,10 @@ return {
     -- 在Neovim中打开Yazi悬浮窗，便于进行文件的切换与管理
     'mikavilpas/yazi.nvim',
     event = 'VeryLazy',
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        'folke/snacks.nvim',
+    },
     keys = {
         {
             '<leader>a',
