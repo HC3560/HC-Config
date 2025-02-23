@@ -32,14 +32,16 @@ cargo install --locked yazi-fm yazi-cli
 
 [max-preview.yazi](https://github.com/yazi-rs/plugins/tree/main/max-preview.yazi)：最大化或恢复预览窗格
 
-[eza-preview.yazi](https://github.com/ahkohd/eza-preview.yazi)：[Yazi](https://github.com/sxyazi/yazi)插件使用[eza](https://github.com/eza-community/eza)预览目录，可以在列表和树模式之间切换。
+[eza-preview.yazi](https://github.com/ahkohd/eza-preview.yazi)：[Yazi](https://github.com/sxyazi/yazi)插件使用[eza](https://github.com/eza-community/eza)预览目录，可以在列表和树模式之间切换
 
 [chmod.yazi](https://github.com/yazi-rs/plugins/tree/main/chmod.yazi)：对所选文件执行`chmod`以更改其模式。该插件仅在 Unix 平台上可用，因为它依赖于`chmod`
 
 [jump-to-char.yazi](https://github.com/yazi-rs/plugins/tree/main/jump-to-char.yazi)：类似Vim的`f<char>` ，跳转到下一个名称以`<char>`开头的文件
 
-[smart-filter.yazi](https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi)：一个让过滤器变得更智能的Yazi插件：连续过滤，自动进入唯一目录，提交时打开文件。
+[smart-filter.yazi](https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi)：一个让过滤器变得更智能的Yazi插件：连续过滤，自动进入唯一目录，提交时打开文件
 
-[yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合[Neovim](https://neovim.io/)使用，使用[lazy.nvim](https://lazy.folke.io/)安装，具体参照我的nvim配置[HC3560/HC-Config](https://github.com/HC3560/HC-Config)。
+[yazi.nvim](https://github.com/mikavilpas/yazi.nvim)：此插件允许您在Neovim的浮动窗口中打开yazi，配合[Neovim](https://neovim.io/)使用，使用[lazy.nvim](https://lazy.folke.io/)安装，具体参照我的nvim配置[HC3560/HC-Config](https://github.com/HC3560/HC-Config)
 
 [confirm-quit.yazi](https://yazi-rs.github.io/docs/tips#confirm-quit)：如果有多个标签页打开，在退出前进行一次确认。注意：使用此插件时，您可能会在 Yazi 退出前注意到一个短暂的弹出窗口闪烁。这是一个“运行任务”确认弹出窗口。有关此行为的更多详细信息，请参阅： [#1059](https://github.com/sxyazi/yazi/issues/1059)
+
+[close-and-restore-tab.yazi](https://github.com/MasouShizuka/close-and-restore-tab.yazi)：一个添加关闭和恢复标签功能的Yazi插件

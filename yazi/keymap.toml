@@ -5,13 +5,13 @@
 [manager]
 
 keymap = [
-	# HC
+	# HC begin
 	{ on = [ "g", "b" ], run = "cd ~/HC-Blog", desc = "Goto ~/HC-Blog" },
 	{ on = [ "g", "p" ], run = "cd ~/Practice", desc = "Goto ~/Practice" },
     # Lazygit
 	{ on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
     # HC-Plugin: compress.yazi
-	{ on = [ "c", "a" ], run = "plugin compress", desc = "Archive selected files" },
+	{ on = [ "c", "a" ], run = "plugin compress", desc = "Compress with compress.yazi" },
     # HC-Plugin: max-preview.yazi
 	{ on = [ "T" ], run = "plugin max-preview", desc = "Maximize or restore preview" },
     # HC-Plugin: eza-preview.yazi
@@ -24,8 +24,10 @@ keymap = [
 	{ on = "F", run = "plugin smart-filter", desc = "Smart filter" },
     # HC-Plugin: confirm-quit.yazi
 	{ on = "q", run = "plugin confirm-quit", desc = "Confirm before quitting if multiple tabs are open" },
-	{ on = "<C-w>", run = "close", desc = "Close the current tab, or quit if it's last" },
-	# HC
+    # HC-Plugin: close-and-restore-tab.yazi
+	{ on = "<C-w>", run = "plugin close-and-restore-tab close_to_right", desc = "Close the current tab and turn to right tab, or quit if it is last tab" },
+	{ on = "<C-t>", run = "plugin close-and-restore-tab restore", desc = "Restore the closed tab" },
+	# HC end
 
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
 	{ on = "<C-[>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },

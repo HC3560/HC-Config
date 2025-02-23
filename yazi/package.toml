@@ -48,5 +48,10 @@ use = "yazi-rs/plugins:smart-filter"
 rev = "5186af7"
 hash = "b482f4f2d3c4e0aa3f8db89a95699439"
 
+[[plugin.deps]]
+use = "MasouShizuka/close-and-restore-tab"
+rev = "bcd584c"
+hash = "b3d7107a248c26b8df28486127dba165"
+
 [flavor]
 deps = []
