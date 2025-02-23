@@ -6,27 +6,44 @@
 
 keymap = [
 	# HC begin
+
 	{ on = [ "g", "b" ], run = "cd ~/HC-Blog", desc = "Goto ~/HC-Blog" },
 	{ on = [ "g", "p" ], run = "cd ~/Practice", desc = "Goto ~/Practice" },
-    # Lazygit
+
+	# Lazygit
 	{ on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
-    # HC-Plugin: compress.yazi
+
+	# HC-Plugin: compress.yazi
 	{ on = [ "c", "a" ], run = "plugin compress", desc = "Compress with compress.yazi" },
-    # HC-Plugin: max-preview.yazi
+
+	# HC-Plugin: max-preview.yazi
 	{ on = [ "T" ], run = "plugin max-preview", desc = "Maximize or restore preview" },
-    # HC-Plugin: eza-preview.yazi
+
+	# HC-Plugin: eza-preview.yazi
 	{ on = [ "E" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
-    # HC-Plugin: chmod.yazi
+
+	# HC-Plugin: chmod.yazi
 	{ on = [ "c", "m" ], run = "plugin chmod",  desc = "Chmod on selected files" },
-    # HC-Plugin: jump-to-char.yazi
+
+	# HC-Plugin: jump-to-char.yazi
 	{ on = [ "f" ], run = "plugin jump-to-char",  desc = "Jump to char" },
-    # HC-Plugin: smart-filter.yazi
+
+	# HC-Plugin: smart-filter.yazi
 	{ on = "F", run = "plugin smart-filter", desc = "Smart filter" },
-    # HC-Plugin: confirm-quit.yazi
+
+	# HC-Plugin: confirm-quit.yazi
 	{ on = "q", run = "plugin confirm-quit", desc = "Confirm before quitting if multiple tabs are open" },
-    # HC-Plugin: close-and-restore-tab.yazi
+
+	# HC-Plugin: close-and-restore-tab.yazi
 	{ on = "<C-w>", run = "plugin close-and-restore-tab close_to_right", desc = "Close the current tab and turn to right tab, or quit if it is last tab" },
 	{ on = "<C-t>", run = "plugin close-and-restore-tab restore", desc = "Restore the closed tab" },
+
+	# HC-Plugin: sudo.yazi
+	# sudo mv
+	{ on = [ "R", "r" ], run = "plugin sudo -- rename", desc = "sudo rename" },
+	# sudo touch/mkdir
+	{ on = [ "R", "c" ], run = "plugin sudo -- create", desc = "sudo create" },
+
 	# HC end
 
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },

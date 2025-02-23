@@ -45,3 +45,5 @@ cargo install --locked yazi-fm yazi-cli
 [confirm-quit.yazi](https://yazi-rs.github.io/docs/tips#confirm-quit)：如果有多个标签页打开，在退出前进行一次确认。注意：使用此插件时，您可能会在 Yazi 退出前注意到一个短暂的弹出窗口闪烁。这是一个“运行任务”确认弹出窗口。有关此行为的更多详细信息，请参阅： [#1059](https://github.com/sxyazi/yazi/issues/1059)
 
 [close-and-restore-tab.yazi](https://github.com/MasouShizuka/close-and-restore-tab.yazi)：一个添加关闭和恢复标签功能的Yazi插件
+
+[sudo.yazi](https://github.com/TD-Sky/sudo.yazi)：在yazi中调用sudo命令
