@@ -1,7 +1,10 @@
 return {
     -- Typescript LSP配置
     'pmizio/typescript-tools.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        'neovim/nvim-lspconfig',
+    },
     config = function()
         local api = require 'typescript-tools.api'
         require('typescript-tools').setup {

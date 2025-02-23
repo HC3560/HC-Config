@@ -2,8 +2,8 @@ return {
     -- 项目切换
     'coffebar/neovim-project',
     dependencies = {
-        { 'nvim-lua/plenary.nvim' },
-        { 'Shatur/neovim-session-manager' },
+        'nvim-lua/plenary.nvim',
+        'Shatur/neovim-session-manager',
     },
     lazy = false,
     priority = 100,
