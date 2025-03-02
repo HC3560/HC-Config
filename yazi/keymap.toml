@@ -47,6 +47,16 @@ keymap = [
 	# sudo touch/mkdir
 	{ on = [ "R", "c" ], run = "plugin sudo -- create", desc = "sudo create" },
 
+	# HC-Plugin: yamb.yazi
+	{ on = [ "b", "a" ], run = "plugin yamb save", desc = "Add bookmark" },
+	{ on = [ "b", "g" ], run = "plugin yamb jump_by_key", desc = "Jump bookmark" },
+	{ on = [ "b", "d" ], run = "plugin yamb delete_by_key", desc = "Delete bookmark" },
+	{ on = [ "b", "r" ], run = "plugin yamb rename_by_key", desc = "Rename bookmark" },
+	{ on = [ "b", "f", "g" ], run = "plugin yamb jump_by_fzf", desc = "Jump bookmark by fzf" },
+	{ on = [ "b", "f", "d" ], run = "plugin yamb delete_by_fzf", desc = "Delete bookmark by fzf" },
+	{ on = [ "b", "f", "r" ], run = "plugin yamb rename_by_fzf", desc = "Rename bookmark by fzf" },
+	{ on = [ "b", "A" ], run = "plugin yamb delete_all", desc = "Delete all bookmarks" },
+
 	# HC end
 
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
