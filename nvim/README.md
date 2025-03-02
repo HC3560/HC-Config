@@ -221,6 +221,12 @@ Lspsaga：[Lspsaga | nvimdev](https://nvimdev.github.io/lspsaga/)
 
 [fedepujol/move.nvim: Gain the power to move lines and blocks and auto-indent them!](https://github.com/fedepujol/move.nvim)
 
+## Noice
+
+高度实验性的插件，完全替换了`messages`、`cmdline`和`popupmenu`的 UI。
+
+[folke/noice.nvim: 💥 Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.](https://github.com/folke/noice.nvim)
+
 ## Neovide
 
 [Neovide - Neovide](https://neovide.dev/)
