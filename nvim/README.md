@@ -227,6 +227,12 @@ Lspsaga：[Lspsaga | nvimdev](https://nvimdev.github.io/lspsaga/)
 
 [folke/noice.nvim: 💥 Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.](https://github.com/folke/noice.nvim)
 
+# gitsigns
+
+Git的深度缓冲集成，用于在实时显示文件的Git修改状态以及git blame信息。
+
+[lewis6991/gitsigns.nvim: Git integration for buffers](https://github.com/lewis6991/gitsigns.nvim)
+
 ## Neovide
 
 [Neovide - Neovide](https://neovide.dev/)
