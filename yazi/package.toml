@@ -5,8 +5,8 @@ hash = "771f18427fb75fb19990ce602bb322f4"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "f6939fb"
-hash = "8ae899541dc7accb680ee4fd382a09c"
+rev = "6c639b4"
+hash = "5614c46d5de76623c283d415bfac8025"
 
 [[plugin.deps]]
 use = "KKV9/compress"
@@ -30,7 +30,7 @@ hash = "a8025f2bb311e869069364fba01abffc"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
-rev = "5ef05bc"
+rev = "6575a9a"
 hash = "72355a6c8b7c8de6ed4dda0f98f86fee"
 
 [[plugin.deps]]
@@ -57,6 +57,11 @@ hash = "b3d7107a248c26b8df28486127dba165"
 use = "TD-Sky/sudo"
 rev = "af70636"
 hash = "a94dcbe9266512806c677138e8591ddb"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "22af003"
+hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [flavor]
 deps = []
