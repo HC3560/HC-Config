@@ -48,4 +48,4 @@ cargo install --locked yazi-fm yazi-cli
 
 [sudo.yazi](https://github.com/TD-Sky/sudo.yazi)：在yazi中调用sudo命令
 
-[yamb.yazi](https://github.com/h-hg/yamb.yazi)：一款用于书签管理的Yazi插件。持久书签，关闭yazi后，书签不会丢失；快速通过快捷键跳转、删除和重命名书签；支持通过[fzf](https://github.com/junegunn/fzf)进行模糊搜索；可使用Lua语言配置书签。
+[yamb.yazi](https://github.com/h-hg/yamb.yazi)：一款用于书签管理的Yazi插件。持久书签，关闭yazi后，书签不会丢失；快速通过快捷键跳转、删除和重命名书签；支持通过[fzf](https://github.com/junegunn/fzf)进行模糊搜索；可使用Lua语言配置书签
