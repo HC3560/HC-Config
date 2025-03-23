@@ -2,6 +2,9 @@ return {
     -- TODO注释
     'folke/todo-comments.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
+    opts = {
+        sign_priority = 8,
+    },
     config = function()
         vim.keymap.set('n', ']t', function()
             require('todo-comments').jump_next()
@@ -18,6 +21,6 @@ return {
             { desc = 'Previous todo comment' }
         )
 
-        require('todo-comments').setup()
+        require('todo-comments').setup {}
     end,
 }
