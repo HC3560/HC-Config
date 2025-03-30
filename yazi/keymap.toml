@@ -19,9 +19,6 @@ keymap = [
 	# HC-Plugin: compress.yazi
 	{ on = [ "c", "a" ], run = "plugin compress", desc = "Compress with compress.yazi" },
 
-	# HC-Plugin: max-preview.yazi
-	{ on = [ "T" ], run = "plugin max-preview", desc = "Maximize or restore preview" },
-
 	# HC-Plugin: eza-preview.yazi
 	{ on = [ "E" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
 
@@ -46,6 +43,9 @@ keymap = [
 	{ on = [ "R", "r" ], run = "plugin sudo -- rename", desc = "sudo rename" },
 	# sudo touch/mkdir
 	{ on = [ "R", "c" ], run = "plugin sudo -- create", desc = "sudo create" },
+
+	# HC-Plugin: toggle-pane.yazi
+	{ on = [ "T" ], run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
 
 	# HC-Plugin: yamb.yazi
 	{ on = [ "b", "a" ], run = "plugin yamb save", desc = "Add bookmark" },
