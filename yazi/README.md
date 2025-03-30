@@ -30,8 +30,6 @@ cargo install --locked yazi-fm yazi-cli
 
 [full-border.yazi](https://github.com/yazi-rs/plugins/tree/main/full-border.yazi)：给Yazi加上完整的边框，让它看起来更华丽
 
-[max-preview.yazi](https://github.com/yazi-rs/plugins/tree/main/max-preview.yazi)：最大化或恢复预览窗格
-
 [eza-preview.yazi](https://github.com/ahkohd/eza-preview.yazi)：[Yazi](https://github.com/sxyazi/yazi)插件使用[eza](https://github.com/eza-community/eza)预览目录，可以在列表和树模式之间切换
 
 [chmod.yazi](https://github.com/yazi-rs/plugins/tree/main/chmod.yazi)：对所选文件执行`chmod`以更改其模式。该插件仅在 Unix 平台上可用，因为它依赖于`chmod`
@@ -47,5 +45,7 @@ cargo install --locked yazi-fm yazi-cli
 [close-and-restore-tab.yazi](https://github.com/MasouShizuka/close-and-restore-tab.yazi)：一个添加关闭和恢复标签功能的Yazi插件
 
 [sudo.yazi](https://github.com/TD-Sky/sudo.yazi)：在yazi中调用sudo命令
+
+[toggle-pane.yazi](https://github.com/yazi-rs/plugins/tree/main/toggle-pane.yazi)：切换不同面板的显示、隐藏和最大化状态：父级、当前和预览
 
 [yamb.yazi](https://github.com/h-hg/yamb.yazi)：一款用于书签管理的Yazi插件。持久书签，关闭yazi后，书签不会丢失；快速通过快捷键跳转、删除和重命名书签；支持通过[fzf](https://github.com/junegunn/fzf)进行模糊搜索；可使用Lua语言配置书签
