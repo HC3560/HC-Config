@@ -29,7 +29,7 @@ return {
                 use_focus = true, -- 仅在窗口聚焦时显示
             },
             current_line_blame_formatter = '<author>, <author_time:%R> - <summary>', -- 提交信息格式
-            sign_priority = 6, -- 状态标记的优先级（防止与其他插件冲突）
+            sign_priority = 8, -- 状态标记的优先级（防止与其他插件冲突）
             update_debounce = 100, -- 状态更新防抖时间（毫秒，值越大性能越好，但延迟越高）
             status_formatter = nil, -- 使用默认状态栏格式
             max_file_length = 40000, -- 超过 4 万行的文件禁用插件（避免卡顿）
@@ -41,7 +41,6 @@ return {
                 row = 0, -- 窗口行偏移
                 col = 1, -- 窗口列偏移
             },
-            -- TODO: 增加快捷键配置
             on_attach = function(bufnr)
                 local gitsigns = require 'gitsigns'
 
