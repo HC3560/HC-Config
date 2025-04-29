@@ -239,6 +239,12 @@ Git的深度缓冲集成，用于在实时显示文件的Git修改状态以及gi
 
 [kevinhwang91/nvim-ufo: Not UFO in the sky, but an ultra fold in Neovim.](https://github.com/kevinhwang91/nvim-ufo)
 
+## statuscol
+
+提供可配置的['statuscolumn'](https://neovim.io/doc/user/options.html#'statuscolumn')和点击处理器的状态栏插件。
+
+[luukvbaal/statuscol.nvim: Status column plugin that provides a configurable 'statuscolumn' and click handlers.](https://github.com/luukvbaal/statuscol.nvim)
+
 ## Neovide
 
 [Neovide - Neovide](https://neovide.dev/)

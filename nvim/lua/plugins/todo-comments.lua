@@ -3,7 +3,7 @@ return {
     'folke/todo-comments.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = {
-        sign_priority = 8,
+        sign_priority = 6,
     },
     config = function()
         vim.keymap.set('n', ']t', function()
