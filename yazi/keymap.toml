@@ -11,7 +11,7 @@ keymap = [
 	{ on = [ "g", "p" ], run = "cd ~/Practice", desc = "Goto ~/Practice" },
 
 	# Lazygit
-	{ on = "<C-g>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
+	{ on = "<C-l>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
 
 	# Open with sudo nvim
 	{ on = [ "R", "o" ], run = "shell --confirm --block 'sudo nvim '$@''", desc = "Open with sudo nvim" },
