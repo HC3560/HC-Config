@@ -1,6 +1,6 @@
 return {
     -- Rust LSP配置
     'mrcjkb/rustaceanvim',
-    version = '^5', -- Recommended
+    version = '^6', -- Recommended
     ft = { 'rust' },
 }
