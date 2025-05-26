@@ -18,10 +18,16 @@ return {
             },
         }
 
-        require('mason-lspconfig').setup {}
+        require('mason-lspconfig').setup {
+            automatic_enable = {
+                exclude = {
+                    'rust_analyzer',
+                },
+            },
+        }
+
         require('mason-tool-installer').setup {
             ensure_installed = {
-                'ts_ls',
                 'lua-language-server',
                 'stylua',
                 'eslint_d',
