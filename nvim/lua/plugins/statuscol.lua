@@ -6,12 +6,26 @@ return {
         require('statuscol').setup {
             relculright = true,
             segments = {
-                -- gitsigns & todo-comments标志段
+                -- gitsigns
                 {
                     sign = {
-                        name = { '.*' }, -- 匹配所有标志
-                        namespace = { 'gitsigns' }, -- 只匹配 gitsigns 命名空间的标志
-                        maxwidth = 2, -- 每行最多显示1个标志
+                        namespace = { 'gitsigns' }, -- 匹配gitsigns符号
+                        maxwidth = 1, -- 每行最多显示1个标志
+                        colwidth = 1, -- 每个标志宽度为1
+                        auto = false, -- 没有标志时不显示任何内容
+                    },
+                    click = 'v:lua.ScSa', -- 使用内置点击处理器
+                },
+
+                -- 调试 & todo-comments & 诊断符号标志段
+                {
+                    sign = {
+                        name = {
+                            'Dap*', -- 匹配调试符号
+                            'todo*', -- 匹配todo-comments符号
+                        },
+                        namespace = { 'diagnostic*' }, -- 匹配诊断符号
+                        maxwidth = 2, -- 每行最多显示2个标志
                         colwidth = 1, -- 每个标志宽度为1
                         auto = false, -- 没有标志时不显示任何内容
                     },
@@ -27,9 +41,6 @@ return {
 
                 -- 折叠标志
                 { text = { '%C', ' ' }, click = 'v:lua.ScFa' },
-            },
-            clickhandlers = {
-                gitsigns = builtin.gitsigns_click,
             },
         }
     end,
