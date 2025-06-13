@@ -111,6 +111,5 @@ return {
                 map({ 'o', 'x' }, 'ih', gitsigns.select_hunk) -- 用`ih`选择当前hunk
             end,
         }
-        require('scrollbar.handlers.gitsigns').setup()
     end,
 }
