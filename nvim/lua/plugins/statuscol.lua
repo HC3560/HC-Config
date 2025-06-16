@@ -32,6 +32,19 @@ return {
                     click = 'v:lua.ScSa', -- 使用内置点击处理器
                 },
 
+                -- bookmarks符号
+                {
+                    sign = {
+                        name = {
+                            'Bookmarks*', -- 匹配bookmarks符号
+                        },
+                        maxwidth = 1, -- 每行最多显示1个标志
+                        colwidth = 1, -- 每个标志宽度为1
+                        auto = false, -- 没有标志时不显示任何内容
+                    },
+                    click = 'v:lua.ScSa', -- 使用内置点击处理器
+                },
+
                 -- 行号
                 {
                     text = { builtin.lnumfunc, ' ' },
