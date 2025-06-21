@@ -4,6 +4,7 @@ return {
     config = function()
         local builtin = require 'statuscol.builtin'
         require('statuscol').setup {
+            -- TODO: 清除行号前的不必要的空列
             relculright = true,
             segments = {
                 -- gitsigns
