@@ -53,7 +53,10 @@ return {
                 },
 
                 -- 折叠标志
-                { text = { '%C', ' ' }, click = 'v:lua.ScFa' },
+                {
+                    text = { '%C', ' ' },
+                    click = 'v:lua.ScFa',
+                },
             },
         }
     end,

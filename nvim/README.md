@@ -245,6 +245,12 @@ Git的深度缓冲集成，用于在实时显示文件的Git修改状态以及gi
 
 [luukvbaal/statuscol.nvim: Status column plugin that provides a configurable 'statuscolumn' and click handlers.](https://github.com/luukvbaal/statuscol.nvim)
 
+## hlslens
+
+搜索功能增强。nvim-hlslens帮助你更好地浏览匹配信息，无缝地在匹配实例之间跳转。
+
+[kevinhwang91/nvim-hlslens: Hlsearch Lens for Neovim](https://github.com/kevinhwang91/nvim-hlslens)
+
 ## Neovide
 
 [Neovide - Neovide](https://neovide.dev/)

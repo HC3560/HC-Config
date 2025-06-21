@@ -31,9 +31,3 @@ keymap.set('n', '<leader>x', '<cmd>x<cr>') -- 保存并退出（等效于 :x<CR>
 -- 无数字前缀时执行 gj（按屏幕行移动，自动适应换行文本）
 keymap.set('n', 'j', [[v:count?'j':'gj']], { noremap = true, expr = true })
 keymap.set('n', 'k', [[v:count?'k':'gk']], { noremap = true, expr = true })
-
--- 4. 实用功能
--- 清除搜索高亮
--- 执行 :nohlsearch 命令（缩写为 :nohl）
--- 清除搜索匹配的高亮显示
-keymap.set('n', '<leader>nh', ':nohl<CR>', { desc = 'Clear search highlights' })
