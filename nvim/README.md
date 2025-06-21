@@ -251,6 +251,12 @@ Git的深度缓冲集成，用于在实时显示文件的Git修改状态以及gi
 
 [kevinhwang91/nvim-hlslens: Hlsearch Lens for Neovim](https://github.com/kevinhwang91/nvim-hlslens)
 
+## scrollbar
+
+可扩展的Neovim滚动条。可以在滚动条上显示光标当前位置与诊断信息，配合其他插件可实现git信息与搜索信息的高亮显示。
+
+[petertriho/nvim-scrollbar: Extensible Neovim Scrollbar](https://github.com/petertriho/nvim-scrollbar)
+
 ## Neovide
 
 [Neovide - Neovide](https://neovide.dev/)
