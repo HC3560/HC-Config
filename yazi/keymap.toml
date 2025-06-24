@@ -26,7 +26,7 @@ keymap = [
 	{ on = [ "c", "m" ], run = "plugin chmod",  desc = "Chmod on selected files" },
 
 	# HC-Plugin: jump-to-char.yazi
-	{ on = [ "f" ], run = "plugin jump-to-char",  desc = "Jump to char" },
+	{ on = "f", run = "plugin jump-to-char",  desc = "Jump to char" },
 
 	# HC-Plugin: smart-filter.yazi
 	{ on = "F", run = "plugin smart-filter", desc = "Smart filter" },
