@@ -1,47 +1,47 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "55bf699"
-hash = "e0ada736ea676c2bbb3ec705a49526ef"
+rev = "5eea960"
+hash = "e01006bfb38951ea89031bd918b20dbb"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "6fde3b2"
-hash = "7ddb7a790746fd91ecdd0350cc5a5d8c"
+rev = "6a0f3f7"
+hash = "d5a74d95c2e8194ac352c5e10e81e64f"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "1342efe"
-hash = "a84a339953a568fee1d8beb63e6dca73"
+rev = "e79b067"
+hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "55bf699"
-hash = "1f3dad061209081a6b04dd6ff2cb06c7"
+rev = "5eea960"
+hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
-rev = "6575a9a"
-hash = "72355a6c8b7c8de6ed4dda0f98f86fee"
+rev = "7a93433"
+hash = "22e1bd3dd03894746a3540b5f3729d0c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "55bf699"
-hash = "2f1053f89d1a301a648ab181d0948e38"
+rev = "5eea960"
+hash = "a030fe48d91b04341ad2fba9be957df"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "55bf699"
-hash = "a670c03eb3760812e044a24f94cedc55"
+rev = "5eea960"
+hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "55bf699"
-hash = "f0c4b41b5d19a3144958383333eff6e7"
+rev = "5eea960"
+hash = "f660384d7ed12ecd456efed313453310"
 
 [[plugin.deps]]
 use = "MasouShizuka/close-and-restore-tab"
-rev = "4eadb90"
-hash = "2bda42b883c9fd85350d9ddd8f972033"
+rev = "5047217"
+hash = "bb24648b1f96f1cef8c1543742189aad"
 
 [[plugin.deps]]
 use = "TD-Sky/sudo"
@@ -55,8 +55,8 @@ hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "55bf699"
-hash = "f3853bbdd1da2fad09d059ab5464abfd"
+rev = "5eea960"
+hash = "d6f60c24d8c0cf57a855bf46115b2502"
 
 [flavor]
 deps = []
