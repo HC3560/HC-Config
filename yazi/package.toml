@@ -1,12 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "5eea960"
-hash = "e01006bfb38951ea89031bd918b20dbb"
+rev = "1ab21d4"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "6a0f3f7"
-hash = "d5a74d95c2e8194ac352c5e10e81e64f"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
@@ -15,28 +15,28 @@ hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "5eea960"
+rev = "1ab21d4"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
-rev = "7a93433"
-hash = "22e1bd3dd03894746a3540b5f3729d0c"
+rev = "b114b01"
+hash = "7676d7da18953f4351048004ab45f0f4"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "5eea960"
-hash = "a030fe48d91b04341ad2fba9be957df"
+rev = "1ab21d4"
+hash = "1adc12c2b2b025411ab61eb8f0879574"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "5eea960"
+rev = "1ab21d4"
 hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "5eea960"
-hash = "f660384d7ed12ecd456efed313453310"
+rev = "1ab21d4"
+hash = "a9d553bd19a3cd7f4eab3abaac5d67ff"
 
 [[plugin.deps]]
 use = "MasouShizuka/close-and-restore-tab"
@@ -55,7 +55,7 @@ hash = "7cc42012a7c2099f80064d228feb8d44"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "5eea960"
+rev = "1ab21d4"
 hash = "d6f60c24d8c0cf57a855bf46115b2502"
 
 [flavor]
