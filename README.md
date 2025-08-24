@@ -4,6 +4,8 @@
 
 如果对你也有一些帮助，我非常开心。
 
+**使用前请仔细阅读软件各自配置文件夹中的`README.md`文件。**
+
 ## Yazi
 
 `yazi`文件夹中是对软件Yazi（[sxyazi/yazi: 💥 Blazing fast terminal file manager written in Rust, based on async I/O.](https://github.com/sxyazi/yazi)）的配置。
