@@ -26,6 +26,24 @@ require("yaziline"):setup({
 -- HC-Plugin: full-border.yazi
 require("full-border"):setup()
 
+-- HC-Plugin: eza-preview.yazi
+require("eza-preview"):setup({
+	-- Set the tree preview to be default (default: true)
+	default_tree = false,
+
+	-- Directory depth level for tree preview (default: 3)
+	level = 3,
+
+	-- Follow symlinks when previewing directories (default: false)
+	follow_symlinks = false,
+
+	-- Show target file info instead of symlink info (default: false)
+	dereference = false,
+
+	-- Show hidden files (default: true)
+	all = true,
+})
+
 -- HC-Plugin: yamb.yazi
 -- You can configure your bookmarks by lua language
 local bookmarks = {}
