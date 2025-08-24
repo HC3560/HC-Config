@@ -3,13 +3,13 @@
 使用配置文件需先参考官方文档（[Yazi](https://yazi-rs.github.io/)）安装Yazi需要的一些扩展软件：
 
 ```shell
-apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+sudo apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick eza
 ```
 
 Yazi本体可以通过Cargo安装：
 
 ```shell
-cargo install --locked yazi-fm yazi-cli
+cargo install --force yazi-build
 ```
 
 参考：

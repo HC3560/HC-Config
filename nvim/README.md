@@ -1,5 +1,20 @@
 # Neovim
 
+本配置基于Neovim的开发版本（NVIM v0.12.0-dev），使用前请确定版本是否正确。
+
+默认版本为稳定版本，切换到开发版本需要添加软件源：
+
+```shell
+sudo apt-add-repository ppa:neovim-ppa/unstable
+```
+
+添加软件源之后重新安装Neovim即可：
+
+```shell
+sudo apt update
+sudo apt install neovim
+```
+
 使用配置文件需先安装某些插件需要使用的扩展软件：
 
 ripgrep（rg）:[BurntSushi/ripgrep: ripgrep recursively searches directories for a regex pattern while respecting your gitignore](https://github.com/BurntSushi/ripgrep)
