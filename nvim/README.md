@@ -17,6 +17,8 @@ sudo apt install neovim
 
 使用配置文件需先安装某些插件需要使用的扩展软件：
 
+unzip：`sudo apt install unzip`
+
 ripgrep（rg）:[BurntSushi/ripgrep: ripgrep recursively searches directories for a regex pattern while respecting your gitignore](https://github.com/BurntSushi/ripgrep)
 
 字体：[Nerd Fonts - Iconic font aggregator, glyphs/icons collection, & fonts patcher](https://www.nerdfonts.com/)
