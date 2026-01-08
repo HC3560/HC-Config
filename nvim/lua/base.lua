@@ -40,7 +40,7 @@ opt.tabstop = 4
 -- 自动缩进时使用 2 个空格
 opt.shiftwidth = 4
 -- 将 Tab 转换为空格
-opt.expandtab = true
+opt.expandtab = false
 -- 自动继承上一行的缩进
 opt.autoindent = true
 
