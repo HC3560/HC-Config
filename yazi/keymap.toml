@@ -4,61 +4,68 @@
 
 [mgr]
 
-keymap = [
-	# HC begin
-
+# HC Config
+prepend_keymap = [
+	# Goto
 	{ on = [ "g", "b" ], run = "cd ~/HC-Blog", desc = "Goto ~/HC-Blog" },
 	{ on = [ "g", "p" ], run = "cd ~/Practice", desc = "Goto ~/Practice" },
 
-	# Lazygit
+	# Plugin: compress.yazi
+	{ on = [ "c", "a", "a" ], run = "plugin compress", desc = "Archive selected files" },
+	{ on = [ "c", "a", "p" ], run = "plugin compress -p", desc = "Archive selected files (password)" },
+
+    # Lazygit
 	{ on = "<C-l>", run = "shell --confirm --block lazygit", desc = "Open Lazygit" },
 
 	# Open with sudo nvim
 	{ on = [ "R", "o" ], run = "shell --confirm --block 'sudo nvim '$@''", desc = "Open with sudo nvim" },
 
-	# HC-Plugin: compress.yazi
-	{ on = [ "c", "a" ], run = "plugin compress", desc = "Compress with compress.yazi" },
+	# Plugin: eza-preview.yazi-rs
+	{ on = [ "e", "t" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
+	{ on = [ "e", "-" ], run = "plugin eza-preview inc-level", desc = "Increment tree level" },
+	{ on = [ "e", "_" ], run = "plugin eza-preview dec-level", desc = "Decrement tree level" },
+	{ on = [ "e", "$" ], run = "plugin eza-preview toggle-follow-symlinks", desc = "Toggle tree follow symlinks" },
+	{ on = [ "e", "*" ], run = "plugin eza-preview toggle-hidden", desc = "Toggle hidden files" },
+	{ on = [ "e", "g", "i" ], run = "plugin eza-preview toggle-git-ignore", desc = "Toggle .gitignore files" },
+	{ on = [ "e", "g", "s" ], run = "plugin eza-preview toggle-git-status", desc = "Toggle showing git status" },
 
-	# HC-Plugin: eza-preview.yazi
-	{ on = [ "E" ], run = "plugin eza-preview",  desc = "Toggle tree/list dir preview" },
-
-	# HC-Plugin: chmod.yazi
+	# Plugin: chmod.yazi
 	{ on = [ "c", "m" ], run = "plugin chmod",  desc = "Chmod on selected files" },
 
-	# HC-Plugin: jump-to-char.yazi
+	# Plugin: jump-to-char.yazi
 	{ on = "f", run = "plugin jump-to-char",  desc = "Jump to char" },
 
-	# HC-Plugin: smart-filter.yazi
+	# Plugin: smart-filter.yazi
 	{ on = "F", run = "plugin smart-filter", desc = "Smart filter" },
 
-	# HC-Plugin: confirm-quit.yazi
+	# Plugin: confirm-quit.yazi
 	{ on = "q", run = "plugin confirm-quit", desc = "Confirm before quitting if multiple tabs are open" },
 
-	# HC-Plugin: close-and-restore-tab.yazi
+	# Plugin: close-and-restore-tab.yazi
 	{ on = "<C-w>", run = "plugin close-and-restore-tab close_to_right", desc = "Close the current tab and turn to right tab, or quit if it is last tab" },
 	{ on = "<C-t>", run = "plugin close-and-restore-tab restore", desc = "Restore the closed tab" },
 
-	# HC-Plugin: sudo.yazi
+	# Plugin: sudo.yazi
 	# sudo mv
 	{ on = [ "R", "r" ], run = "plugin sudo -- rename", desc = "sudo rename" },
 	# sudo touch/mkdir
-	{ on = [ "R", "c" ], run = "plugin sudo -- create", desc = "sudo create" },
+	{ on = [ "R", "a" ], run = "plugin sudo -- create", desc = "sudo create" },
 
-	# HC-Plugin: toggle-pane.yazi
+	# Plugin: toggle-pane.yazi
 	{ on = [ "T" ], run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
 
-	# HC-Plugin: yamb.yazi
-	{ on = [ "b", "a" ], run = "plugin yamb save", desc = "Add bookmark" },
-	{ on = [ "b", "g" ], run = "plugin yamb jump_by_key", desc = "Jump bookmark" },
-	{ on = [ "b", "d" ], run = "plugin yamb delete_by_key", desc = "Delete bookmark" },
-	{ on = [ "b", "r" ], run = "plugin yamb rename_by_key", desc = "Rename bookmark" },
-	{ on = [ "b", "f", "g" ], run = "plugin yamb jump_by_fzf", desc = "Jump bookmark by fzf" },
-	{ on = [ "b", "f", "d" ], run = "plugin yamb delete_by_fzf", desc = "Delete bookmark by fzf" },
-	{ on = [ "b", "f", "r" ], run = "plugin yamb rename_by_fzf", desc = "Rename bookmark by fzf" },
-	{ on = [ "b", "A" ], run = "plugin yamb delete_all", desc = "Delete all bookmarks" },
+	# Plugin: yamb.yazi
+	{ on = [ "b", "a" ], run = "plugin yamb -- save", desc = "Add bookmark" },
+	{ on = [ "b", "g" ], run = "plugin yamb -- jump_by_key", desc = "Jump bookmark" },
+	{ on = [ "b", "G" ], run = "plugin yamb -- jump_by_fzf", desc = "Jump bookmark by fzf" },
+	{ on = [ "b", "d" ], run = "plugin yamb -- delete_by_key", desc = "Delete bookmark" },
+	{ on = [ "b", "D" ], run = "plugin yamb -- delete_by_fzf", desc = "Delete bookmark by fzf" },
+	{ on = [ "b", "D", "A" ], run = "plugin yamb -- delete_all", desc = "Delete all bookmarks" },
+	{ on = [ "b", "r" ], run = "plugin yamb -- rename_by_key", desc = "Rename bookmark" },
+	{ on = [ "b", "R" ], run = "plugin yamb -- rename_by_fzf", desc = "Rename bookmark by fzf" },
+]
 
-	# HC end
-
+keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
 	{ on = "<C-[>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
 	{ on = "q",     run = "quit",               desc = "Quit the process" },
@@ -97,9 +104,9 @@ keymap = [
 	{ on = "L", run = "forward", desc = "Forward to next directory" },
 
 	# Toggle
-	{ on = "<Space>", run = [ "toggle", "arrow next" ], desc = "Toggle the current selection state" },
-	{ on = "<C-a>",   run = "toggle_all --state=on",    desc = "Select all files" },
-	{ on = "<C-r>",   run = "toggle_all",               desc = "Invert selection of all files" },
+	{ on = "<Space>", run = [ "toggle", "arrow 1" ], desc = "Toggle the current selection state" },
+	{ on = "<C-a>",   run = "toggle_all --state=on", desc = "Select all files" },
+	{ on = "<C-r>",   run = "toggle_all",            desc = "Invert selection of all files" },
 
 	# Visual mode
 	{ on = "v", run = "visual_mode",         desc = "Enter visual mode (selection mode)" },
@@ -163,19 +170,19 @@ keymap = [
 	{ on = "N", run = "find_arrow --previous",   desc = "Previous found" },
 
 	# Sorting
-	{ on = [ ",", "m" ], run = [ "sort mtime --reverse=no", "linemode mtime" ], desc = "Sort by modified time" },
-	{ on = [ ",", "M" ], run = [ "sort mtime --reverse", "linemode mtime" ],    desc = "Sort by modified time (reverse)" },
-	{ on = [ ",", "b" ], run = [ "sort btime --reverse=no", "linemode btime" ], desc = "Sort by birth time" },
-	{ on = [ ",", "B" ], run = [ "sort btime --reverse", "linemode btime" ],    desc = "Sort by birth time (reverse)" },
-	{ on = [ ",", "e" ], run = "sort extension --reverse=no",                   desc = "Sort by extension" },
-	{ on = [ ",", "E" ], run = "sort extension --reverse",                      desc = "Sort by extension (reverse)" },
-	{ on = [ ",", "a" ], run = "sort alphabetical --reverse=no",                desc = "Sort alphabetically" },
-	{ on = [ ",", "A" ], run = "sort alphabetical --reverse",                   desc = "Sort alphabetically (reverse)" },
-	{ on = [ ",", "n" ], run = "sort natural --reverse=no",                     desc = "Sort naturally" },
-	{ on = [ ",", "N" ], run = "sort natural --reverse",                        desc = "Sort naturally (reverse)" },
-	{ on = [ ",", "s" ], run = [ "sort size --reverse=no", "linemode size" ],   desc = "Sort by size" },
-	{ on = [ ",", "S" ], run = [ "sort size --reverse", "linemode size" ],      desc = "Sort by size (reverse)" },
-	{ on = [ ",", "r" ], run = "sort random --reverse=no",                      desc = "Sort randomly" },
+	{ on = [ ",", "m" ], run = [ "sort mtime --reverse=no", "linemode mtime" ],  desc = "Sort by modified time" },
+	{ on = [ ",", "M" ], run = [ "sort mtime --reverse=yes", "linemode mtime" ], desc = "Sort by modified time (reverse)" },
+	{ on = [ ",", "b" ], run = [ "sort btime --reverse=no", "linemode btime" ],  desc = "Sort by birth time" },
+	{ on = [ ",", "B" ], run = [ "sort btime --reverse=yes", "linemode btime" ], desc = "Sort by birth time (reverse)" },
+	{ on = [ ",", "e" ], run = "sort extension --reverse=no",                    desc = "Sort by extension" },
+	{ on = [ ",", "E" ], run = "sort extension --reverse=yes",                   desc = "Sort by extension (reverse)" },
+	{ on = [ ",", "a" ], run = "sort alphabetical --reverse=no",                 desc = "Sort alphabetically" },
+	{ on = [ ",", "A" ], run = "sort alphabetical --reverse=yes",                desc = "Sort alphabetically (reverse)" },
+	{ on = [ ",", "n" ], run = "sort natural --reverse=no",                      desc = "Sort naturally" },
+	{ on = [ ",", "N" ], run = "sort natural --reverse=yes",                     desc = "Sort naturally (reverse)" },
+	{ on = [ ",", "s" ], run = [ "sort size --reverse=no", "linemode size" ],    desc = "Sort by size" },
+	{ on = [ ",", "S" ], run = [ "sort size --reverse=yes", "linemode size" ],   desc = "Sort by size (reverse)" },
+	{ on = [ ",", "r" ], run = "sort random --reverse=no",                       desc = "Sort randomly" },
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
@@ -308,14 +315,16 @@ keymap = [
 	{ on = "<C-f>",   run = "move 1",  desc = "Move forward a character" },
 
 	# Word-wise movement
-	{ on = "b",     run = "backward",                    desc = "Move back to the start of the current or previous word" },
-	{ on = "B",     run = "backward --far",              desc = "Move back to the start of the current or previous WORD" },
-	{ on = "w",     run = "forward",                     desc = "Move forward to the start of the next word" },
-	{ on = "W",     run = "forward --far",               desc = "Move forward to the start of the next WORD" },
-	{ on = "e",     run = "forward --end-of-word",       desc = "Move forward to the end of the current or next word" },
-	{ on = "E",     run = "forward --far --end-of-word", desc = "Move forward to the end of the current or next WORD" },
-	{ on = "<A-b>", run = "backward",                    desc = "Move back to the start of the current or previous word" },
-	{ on = "<A-f>", run = "forward --end-of-word",       desc = "Move forward to the end of the current or next word" },
+	{ on = "b",         run = "backward",                    desc = "Move back to the start of the current or previous word" },
+	{ on = "B",         run = "backward --far",              desc = "Move back to the start of the current or previous WORD" },
+	{ on = "w",         run = "forward",                     desc = "Move forward to the start of the next word" },
+	{ on = "W",         run = "forward --far",               desc = "Move forward to the start of the next WORD" },
+	{ on = "e",         run = "forward --end-of-word",       desc = "Move forward to the end of the current or next word" },
+	{ on = "E",         run = "forward --far --end-of-word", desc = "Move forward to the end of the current or next WORD" },
+	{ on = "<A-b>",     run = "backward",                    desc = "Move back to the start of the current or previous word" },
+	{ on = "<A-f>",     run = "forward --end-of-word",       desc = "Move forward to the end of the current or next word" },
+	{ on = "<C-Left>",  run = "backward",                    desc = "Move back to the start of the current or previous word" },
+	{ on = "<C-Right>", run = "forward --end-of-word",       desc = "Move forward to the end of the current or next word" },
 
 	# Line-wise movement
 	{ on = "0",      run = "move bol",        desc = "Move to the BOL" },
@@ -334,10 +343,12 @@ keymap = [
 	{ on = "<C-d>",       run = "backspace --under", desc = "Delete the character under the cursor" },
 
 	# Kill
-	{ on = "<C-u>", run = "kill bol",      desc = "Kill backwards to the BOL" },
-	{ on = "<C-k>", run = "kill eol",      desc = "Kill forwards to the EOL" },
-	{ on = "<C-w>", run = "kill backward", desc = "Kill backwards to the start of the current word" },
-	{ on = "<A-d>", run = "kill forward",  desc = "Kill forwards to the end of the current word" },
+	{ on = "<C-u>",         run = "kill bol",      desc = "Kill backwards to the BOL" },
+	{ on = "<C-k>",         run = "kill eol",      desc = "Kill forwards to the EOL" },
+	{ on = "<C-w>",         run = "kill backward", desc = "Kill backwards to the start of the current word" },
+	{ on = "<A-d>",         run = "kill forward",  desc = "Kill forwards to the end of the current word" },
+	{ on = "<C-Backspace>", run = "kill backward", desc = "Kill backwards to the start of the current word" },
+	{ on = "<C-Delete>",    run = "kill forward",  desc = "Kill forwards to the end of the current word" },
 
 	# Cut/Yank/Paste
 	{ on = "d", run = "delete --cut",                                      desc = "Cut selected characters" },
@@ -351,9 +362,10 @@ keymap = [
 	{ on = "p", run = "paste",                                             desc = "Paste copied characters after the cursor" },
 	{ on = "P", run = "paste --before",                                    desc = "Paste copied characters before the cursor" },
 
-	# Undo/Redo
-	{ on = "u",     run = "undo", desc = "Undo the last operation" },
-	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
+	# Undo/Redo/Casefy
+	{ on = "u",     run = [ "undo", "casefy lower" ], desc = "Undo, or lowercase if in visual mode" },
+	{ on = "U",     run = "casefy upper",             desc = "Uppercase" },
+	{ on = "<C-r>", run = "redo",                     desc = "Redo the last operation" },
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },

@@ -26,6 +26,12 @@ cargo install --force yazi-build
 
 [starship.yazi](https://github.com/Rolv-Apneseth/starship.yazi)：在Yazi中显示starship命令行信息（[starship/starship: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!](https://github.com/starship/starship)）
 
+> starship也可以使用Cargo安装：
+>
+> ```shell
+> cargo install starship --locked
+> ```
+
 [yaziline.yazi](https://github.com/llanosrocas/yaziline.yazi)：Yazi的简单类似lualine的状态行，在状态行中显示更多信息
 
 [full-border.yazi](https://github.com/yazi-rs/plugins/tree/main/full-border.yazi)：给Yazi加上完整的边框，让它看起来更华丽

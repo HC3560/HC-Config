@@ -1,42 +1,42 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "1ab21d4"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
+rev = "4e55902"
+hash = "eb301feb9e125adf5aa4f59f2aa54e44"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "a63550b"
-hash = "c2021386289a0cbb3e152a052f67c177"
+rev = "eca1861"
+hash = "e519d894e94ded741e06aae4d4775981"
 
 [[plugin.deps]]
 use = "llanosrocas/yaziline"
-rev = "e79b067"
-hash = "f590c5b7d0730e8d6023b1b34ddf7ead"
+rev = "34afcba"
+hash = "1cd2446f8976eb11e549612fd80e3645"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "1ab21d4"
+rev = "4e55902"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "ahkohd/eza-preview"
-rev = "b114b01"
-hash = "7676d7da18953f4351048004ab45f0f4"
+rev = "7a2d60f"
+hash = "eed8e19469f3dca38fd977eb938dd34e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "1ab21d4"
-hash = "1adc12c2b2b025411ab61eb8f0879574"
+rev = "4e55902"
+hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "1ab21d4"
-hash = "d2f04875bbd4ed3dd5696e8c4b094fde"
+rev = "4e55902"
+hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "1ab21d4"
-hash = "a9d553bd19a3cd7f4eab3abaac5d67ff"
+rev = "4e55902"
+hash = "407d19bc4fb46eff5fa8ff8337644847"
 
 [[plugin.deps]]
 use = "MasouShizuka/close-and-restore-tab"
@@ -45,18 +45,23 @@ hash = "bb24648b1f96f1cef8c1543742189aad"
 
 [[plugin.deps]]
 use = "TD-Sky/sudo"
-rev = "af70636"
-hash = "a94dcbe9266512806c677138e8591ddb"
+rev = "86205aa"
+hash = "9628b660afb192d32f2ea5f6634d3e72"
 
 [[plugin.deps]]
 use = "h-hg/yamb"
-rev = "22af003"
-hash = "7cc42012a7c2099f80064d228feb8d44"
+rev = "5f2e22e"
+hash = "699fe07e0d2d1b4af8dafb84168eeb04"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "1ab21d4"
-hash = "d6f60c24d8c0cf57a855bf46115b2502"
+rev = "4e55902"
+hash = "8a7c58225816a163a6e8730c0adafbc8"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "c9c16d8"
+hash = "a68bde26a61da040131aa95069f638c2"
 
 [flavor]
 deps = []

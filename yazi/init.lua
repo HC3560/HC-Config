@@ -1,14 +1,20 @@
--- HC-Plugin: git.yazi
+-- Plugin: git.yazi
 require("git"):setup()
 
--- HC-Plugin: starship.yazi
+-- Plugin: starship.yazi
 require("starship"):setup({
 	config_file = "~/.config/yazi/starship.toml",
 })
 
--- HC-Plugin: yaziline.yazi
+-- Plugin: yaziline.yazi
 require("yaziline"):setup({
-	color = "#A7C080", -- main theme color
+	color = "#A7C080",
+	secondary_color = "#5A6078",
+	default_files_color = "darkgray", -- color of the file counter when it's inactive
+	selected_files_color = "white",
+	yanked_files_color = "green",
+	cut_files_color = "red",
+
 	separator_style = "angly", -- "angly" | "curvy" | "liney" | "empty"
 	separator_open = "",
 	separator_close = "",
@@ -16,17 +22,19 @@ require("yaziline"):setup({
 	separator_close_thin = "",
 	separator_head = "",
 	separator_tail = "",
+
 	select_symbol = "",
 	yank_symbol = "󰆐",
+
 	filename_max_length = 24, -- truncate when filename > 24
 	filename_truncate_length = 6, -- leave 6 chars on both sides
-	filename_truncate_separator = "...", -- the separator of the truncated filename
+	filename_truncate_separator = "...",
 })
 
--- HC-Plugin: full-border.yazi
+-- Plugin: full-border.yazi
 require("full-border"):setup()
 
--- HC-Plugin: eza-preview.yazi
+-- Plugin: eza-preview.yazi
 require("eza-preview"):setup({
 	-- Set the tree preview to be default (default: true)
 	default_tree = false,
@@ -34,7 +42,10 @@ require("eza-preview"):setup({
 	-- Directory depth level for tree preview (default: 3)
 	level = 3,
 
-	-- Follow symlinks when previewing directories (default: false)
+	-- Show file icons
+	icons = true,
+
+	-- Follow symlinks when previewing directories (default: true)
 	follow_symlinks = false,
 
 	-- Show target file info instead of symlink info (default: false)
@@ -42,11 +53,44 @@ require("eza-preview"):setup({
 
 	-- Show hidden files (default: true)
 	all = true,
+
+	-- Ignore files matching patterns (default: {})
+	-- ignore_glob = "*.log"
+	-- ignore_glob = { "*.tmp", "node_modules", ".git", ".DS_Store" }
+	-- SEE: https://www.linuxjournal.com/content/pattern-matching-bash to learn about glob patterns
+	ignore_glob = {},
+
+	-- Ignore files mentioned in '.gitignore'  (default: true)
+	git_ignore = false,
+
+	-- Show git status (default: false)
+	git_status = false,
 })
 
--- HC-Plugin: yamb.yazi
+-- Plugin: yamb.yazi
 -- You can configure your bookmarks by lua language
 local bookmarks = {}
+
+local path_sep = package.config:sub(1, 1)
+local home_path = ya.target_family() == "windows" and os.getenv("USERPROFILE") or os.getenv("HOME")
+if ya.target_family() == "windows" then
+	table.insert(bookmarks, {
+		tag = "Scoop Local",
+		path = (os.getenv("SCOOP") or home_path .. "\\scoop") .. "\\",
+		key = "p",
+	})
+	table.insert(bookmarks, {
+		tag = "Scoop Global",
+		path = (os.getenv("SCOOP_GLOBAL") or "C:\\ProgramData\\scoop") .. "\\",
+		key = "P",
+	})
+end
+table.insert(bookmarks, {
+	tag = "Desktop",
+	path = home_path .. path_sep .. "Desktop" .. path_sep,
+	key = "d",
+})
+
 require("yamb"):setup({
 	-- Optional, the path ending with path seperator represents folder.
 	bookmarks = bookmarks,
@@ -74,7 +118,7 @@ end, 3300, Status.LEFT)
 -- 在状态栏中显示用户/文件组：https://yazi-rs.github.io/docs/tips/#user-group-in-status
 Status:children_add(function()
 	local h = cx.active.current.hovered
-	if h == nil or ya.target_family() ~= "unix" then
+	if not h or ya.target_family() ~= "unix" then
 		return ""
 	end
 
