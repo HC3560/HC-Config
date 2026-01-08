@@ -3,7 +3,7 @@
 使用配置文件需先参考官方文档（[Yazi](https://yazi-rs.github.io/)）安装Yazi需要的一些扩展软件：
 
 ```shell
-sudo apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick eza
+sudo apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick eza mediainfo
 ```
 
 Yazi本体可以通过Cargo安装：
@@ -55,3 +55,5 @@ cargo install --force yazi-build
 [toggle-pane.yazi](https://github.com/yazi-rs/plugins/tree/main/toggle-pane.yazi)：切换不同面板的显示、隐藏和最大化状态：父级、当前和预览
 
 [yamb.yazi](https://github.com/h-hg/yamb.yazi)：一款用于书签管理的Yazi插件。持久书签，关闭yazi后，书签不会丢失；快速通过快捷键跳转、删除和重命名书签；支持通过[fzf](https://github.com/junegunn/fzf)进行模糊搜索；可使用Lua语言配置书签
+
+[mediainfo.yazi](https://github.com/boydaihungst/mediainfo.yazi)：这是一个用于预览媒体文件的Yazi插件。预览中用`ffmpeg`显示缩略图（如果有的话），媒体元数据用`mediainfo`显示。

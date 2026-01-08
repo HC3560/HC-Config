@@ -125,6 +125,15 @@ spotters = [
 	# Fallback
 	{ url = "*", run = "file" },
 ]
+# HC Config
+prepend_preloaders = [
+	# Plugin: mediainfo.yazi
+	# Replace magick, image, video with mediainfo
+	{ mime = "{audio,video,image}/*", run = "mediainfo" },
+	{ mime = "application/subrip", run = "mediainfo" },
+	# Adobe Illustrator, Adobe Photoshop is image/adobe.photoshop, already handled above
+	{ mime = "application/postscript", run = "mediainfo" },
+]
 preloaders = [
 	# Image
 	{ mime = "image/{avif,hei?,jxl}", run = "magick" },
@@ -142,6 +151,13 @@ preloaders = [
 prepend_previewers = [
 	# Plugin: eza-preview.yazi
 	{ url = "*/", run = "eza-preview" },
+
+	# Plugin: mediainfo.yazi
+	# Replace magick, image, video with mediainfo
+    { mime = "{audio,video,image}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo" },
+    # Adobe Illustrator, Adobe Photoshop is image/adobe.photoshop, already handled above
+    { mime = "application/postscript", run = "mediainfo" },
 ]
 previewers = [
 	{ url = "*/", run = "folder" },
