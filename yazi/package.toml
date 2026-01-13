@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "4e55902"
-hash = "eb301feb9e125adf5aa4f59f2aa54e44"
+rev = "a703eab"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
@@ -15,7 +15,7 @@ hash = "1cd2446f8976eb11e549612fd80e3645"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "4e55902"
+rev = "a703eab"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -25,17 +25,17 @@ hash = "eed8e19469f3dca38fd977eb938dd34e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "4e55902"
+rev = "a703eab"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "4e55902"
+rev = "a703eab"
 hash = "ce67445ebb1bf3d97b8e44f50904b2c5"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "4e55902"
+rev = "a703eab"
 hash = "407d19bc4fb46eff5fa8ff8337644847"
 
 [[plugin.deps]]
@@ -55,13 +55,13 @@ hash = "699fe07e0d2d1b4af8dafb84168eeb04"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "4e55902"
+rev = "a703eab"
 hash = "8a7c58225816a163a6e8730c0adafbc8"
 
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "c9c16d8"
-hash = "a68bde26a61da040131aa95069f638c2"
+rev = "e6007f7"
+hash = "e0b1051849756dd72fca874c320259a"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
